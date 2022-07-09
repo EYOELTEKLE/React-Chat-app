@@ -4,12 +4,12 @@ import Message from './image/Message.jpg';
 import io from "socket.io-client"
 import {useEffect, useState} from 'react';
 function App() {
-  const link = process.env.endpoint
+
   const [message,setMessage] = useState("");
   const [allChat, setChat] = useState([]);
   const [room, setRoom] = useState("");
   const [error,setError] = useState(false);
-  const socket = io.connect(link)
+  const socket = io.connect("https://chat-eybackend.herokuapp.com/")
   const sendMessage = () => 
   {
     if(room === "")
