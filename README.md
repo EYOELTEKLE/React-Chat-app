@@ -2,7 +2,9 @@
 
 ## Usage 
 
-- Requires a common room Id for both users to chat and be on the Same Network
+- Requires a common room Id for both users to chat and both should join the Room
+
+## LiveLink - https://stalwart-clafoutis-01940d.netlify.app/
 
 ## Tools Used
 
