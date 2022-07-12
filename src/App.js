@@ -36,8 +36,7 @@ function App() {
       
       //setRecieved(data.allChat);
       setChat(prev => [...prev, data.message])
-      console.log(data.message)
-      console.log(allChat);
+      
 
       
 })
