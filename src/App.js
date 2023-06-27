@@ -9,7 +9,7 @@ function App() {
   const [allChat, setChat] = useState([]);
   const [room, setRoom] = useState("");
   const [error,setError] = useState(false);
-  const socket = io.connect("https://chat-eybackend.herokuapp.com/")
+  const socket = io.connect(`${process.env.api_endpoint}`)
   const sendMessage = () => 
   {
     if(room === "")
