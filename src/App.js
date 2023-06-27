@@ -2,14 +2,18 @@
 import './App.css';
 import Message from './image/Message.jpg';
 import io from "socket.io-client"
+
+
 import {useEffect, useState} from 'react';
 function App() {
 
+ 
   const [message,setMessage] = useState("");
   const [allChat, setChat] = useState([]);
   const [room, setRoom] = useState("");
   const [error,setError] = useState(false);
-  const socket = io.connect(`${process.env.api_endpoint}`)
+ 
+  const socket = io.connect("https://chat-backend-034s.onrender.com/")
   const sendMessage = () => 
   {
     if(room === "")
